@@ -109,6 +109,7 @@ class ModelTrainer:
             predicted=best_model.predict(X_test)
 
             r2_square = r2_score(y_test, predicted)
+            print(f"Current best model {best_model_name}")
             return r2_square
             
 
